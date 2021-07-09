@@ -41,17 +41,17 @@ const Rowl = new MessageActionRow()
 
 client.on('clickMenu', async (menu) => {
    if(menu.values[0] == 'valorant') {
-await menu.reply.defer()
+await menu.reply.think(true)
  await menu.clicker.member.roles.add("862966117190729768") // specify role id
             await menu.channel.send(`${menu.clicker.user} - (${menu.clicker.user.id}) <@&862966117190729768> u have been given a role for clicking the button.`).then(msg => { msg.delete({ timeout: 30000 }) }).catch(console.error);
    }
    if(menu.values[0] == 'csgo') {
-await menu.reply.defer()
+await menu.reply.think(true)
 await menu.clicker.member.roles.add("862967354501890068") // specify role id
             await menu.channel.send(`${menu.clicker.user} - (${menu.clicker.user.id}) <@&862967354501890068> u have been given a role for clicking the button.`).then(msg => { msg.delete({ timeout: 30000 }) }).catch(console.error);
 }
    if(menu.values[0] == 'pubg') {
-   await menu.reply.defer()
+ await menu.reply.think(true)
 await menu.clicker.member.roles.add("862966143004966922") // specify role id
             await menu.channel.send(`${menu.clicker.user} - (${menu.clicker.user.id}) <@&862966143004966922> u have been given a role for clicking the button.`).then(msg => { msg.delete({ timeout: 30000 }) }).catch(console.error);
 }
