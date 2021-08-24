@@ -4,6 +4,8 @@ const set = require('./set.json');
 client.login(set.token);
 client.on("ready", () => {client.user.setPresence({game: {name: `clerance`,type: "LISTENING"},status: "invisible"});});
 const { MessageMenuOption , MessageMenu , MessageActionRow } = require("discord-buttons")
+const disbut = require("discord-buttons")
+disbut(client)
 
 client.on("message", async (message) => {
     if (message.content == "!game" && message.author.id === "419836743878180874") {
